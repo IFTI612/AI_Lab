@@ -125,10 +125,10 @@ print("  SECTION 4 – MODEL TRAINING")
 print("=" * 60)
 
 # ── 4a. Decision Tree ─────────────────────────────────────────────────────────
-# max_depth=7 prevents overfitting; criterion='gini' is standard
-dt = DecisionTreeClassifier(max_depth=7, criterion="gini", random_state=42)
+# max_depth=5 prevents overfitting; criterion='gini' is standard
+dt = DecisionTreeClassifier(max_depth=5, criterion="gini", random_state=42)
 dt.fit(X_train, y_train)
-print("\n▸ Decision Tree trained  (max_depth=7, criterion=gini)")
+print("\n▸ Decision Tree trained  (max_depth=5, criterion=gini)")
 
 # ── 4b. Naïve Bayes (Gaussian) ────────────────────────────────────────────────
 # GaussianNB assumes continuous features follow a normal distribution
